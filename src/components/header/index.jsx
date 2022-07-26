@@ -18,7 +18,7 @@ export function Header() {
         <button onClick={handleShow}>
           <GoGrabber className='iconb' size={45}/>
         </button>
-        <nav className='navegacao active'>
+        <nav className='navegacao'>
           <ul>
             <li>Item 1</li>
           </ul>

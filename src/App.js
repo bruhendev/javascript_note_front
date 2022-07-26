@@ -1,9 +1,9 @@
-import { Header } from "./components/header";
+import { NoteRoutes } from "./noteRoutes";
 
 function App() {
   return (
     <>
-      <Header />
+      <NoteRoutes />
     </>
   );
 }

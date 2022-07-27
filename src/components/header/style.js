@@ -35,12 +35,38 @@ export const Header = styled.header`
 
         nav {
             z-index: 98;
+
+            ul {
+                display: flex;
+
+                li {               
+                    a {
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                        color: #720e9e;
+                    }
+                }
+
+                li:not(:last-child){
+                   margin-right: 3.2rem;
+                }
+
+                .register {
+                    border: 1px solid #720e9e;
+                    padding: .8rem 1.6rem;
+                    border-radius: .5rem;
+                    transition: all 1s;
+
+                    &:hover {
+                        background-color: #720e9e;
+                        color: white;
+                    }
+                }
+            }
         }
 
-        li {
-            font-size: 2.4rem;
-            font-weight: bold;
-        }
+        
+
     }
 
     @media (max-width: 750px) {
@@ -59,15 +85,28 @@ export const Header = styled.header`
                 display: flex;
                 flex-direction: column;
                 justify-content: end;
-
+                background-color: white;
                 transition: all 1s;
                 overflow: hidden;
+                
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
 
+                    li {
+                        margin-bottom: 3.2rem;
+                    }
+
+                    li:not(:last-child){
+                        margin-right: 0;
+                    }
+                }
               
             }
 
             .active {
-                height: 120px;  
+                height: 130px;  
             }
         }
     } 

@@ -1,6 +1,7 @@
 import LogoImage from '../../assets/images/logo.png';
 import * as C from './style'
 import { GoGrabber } from "react-icons/go";
+import { Link } from 'react-router-dom';
 
 export function Header() {
 
@@ -13,14 +14,18 @@ export function Header() {
     <C.Header>
       <div className='container'>
         <div>
-          <img src={LogoImage} alt="logo" />
+          <Link to="/">
+            <img src={LogoImage} alt="logo" />
+          </Link>
+
         </div>
         <button onClick={handleShow}>
-          <GoGrabber className='iconb' size={45}/>
+          <GoGrabber className='iconb' size={45} />
         </button>
         <nav className='navegacao'>
           <ul>
-            <li>Item 1</li>
+            <li><Link to="/register">Register</Link></li>
+            <li><Link to="/login" className='register'>Login</Link></li>
           </ul>
         </nav>
       </div>

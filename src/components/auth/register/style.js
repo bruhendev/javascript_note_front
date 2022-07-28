@@ -11,7 +11,7 @@ export const Container = styled.div`
 
     .card {
         margin: 0 auto;
-        width: 300px;
+        width: 350px;
         border-radius: 5px;
         background-color: white;
         padding-top: 3.2rem;

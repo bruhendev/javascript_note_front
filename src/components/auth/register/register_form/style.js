@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Form = styled.form`
     display: flex;
     flex-direction: column;
-    padding: 3.2rem 1rem;
+    padding: 3.2rem 2.4rem;
     gap: 10px;
 
     input {
@@ -27,11 +27,33 @@ export const Form = styled.form`
         outline: 0;
     }
 
+    label {
+        color: #495057;
+    }
+
     
     div {
         margin-top: 3.2rem;
         display: flex;
         justify-content: space-around;
         align-items: center;
+
+        a {
+            color: #720e9e;
+        }
+
+        button {
+            border: 1px solid #720e9e;
+            padding: .8rem 1.6rem;
+            border-radius: .5rem;
+            transition: all 1s;
+            background-color: white;
+            color: #720e9e;
+
+            &:hover {
+                background-color: #720e9e;
+                color: white;
+            }
+        }
     }
 `;
